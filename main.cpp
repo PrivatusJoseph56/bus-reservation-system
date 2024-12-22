@@ -348,33 +348,41 @@ void cancelBooking(vector<Bus> &buses) {
     cout << "Bus not found!\n";
 }
 
-// void saveBusesToFile(const vector<Bus> &buses) {
-//     ofstream outFile(fileName);
-//     if (!outFile) {
-//         cout << "Error saving to file!\n";
-//         return;
-//     }
 
-//     for (const auto &bus : buses) {
-//         bus.saveToFile(outFile);
-//     }
-//     outFile.close();
-//     cout << "Bus data saved successfully!\n";
-// }
+void saveBusesToFile(const vector<Bus> &buses) {
+    string fileName = "buses.txt";
+    ofstream outFile(fileName);
+    if (!outFile) {
+        cout << "Error saving to file!\n";
+        return;
+    }
+
+    for (const auto &bus : buses) {
+        bus.saveToFile(outFile);
+    }
+    outFile.close();
+    cout << "Bus data saved successfully!\n";
+}
 
 void loadBusesFromFile(vector<Bus> &buses) {
-     ifstream inFile(fileName);
+    string fileName = "buses.txt"; // Assuming the file name is buses.txt
+    ifstream inFile(fileName);
     if (!inFile) {
-        return;    }
+        return;
+    }
 
     string name, from, to;
-   double fare;
-     int totalSeats;
-while (inFile >> name >> from >> to >> fare >> totalSeats) {
-       Bus bus(name, from, to, fare, totalSeats);/         int seat;        while (inFile >> seat) {
-            End of seat list
-            if (seat == -1) break;              bus.cancelSeats({seat});        }
+    double fare;
+    int totalSeats;
+    while (inFile >> name >> from >> to >> fare >> totalSeats) {
+        Bus bus(name, from, to, fare, totalSeats);
+        int seat;
+        while (inFile >> seat) {
+            // End of seat list
+            if (seat == -1) break;
+            bus.cancelSeats({seat});
+        }
         buses.push_back(bus);
     }
     inFile.close();
- }
+}
