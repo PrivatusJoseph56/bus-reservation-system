@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2024.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\BUS_RESERVATIONS.dir/objects.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\ar.exe qc CMakeFiles\BUS_RESERVATIONS.dir/objects.a @CMakeFiles\BUS_RESERVATIONS.dir\objects1.rsp
+C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\BUS_RESERVATIONS.dir/objects.a -Wl,--no-whole-archive -o BUS_RESERVATIONS.exe -Wl,--out-implib,libBUS_RESERVATIONS.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\BUS_RESERVATIONS.dir\linkLibs.rsp
