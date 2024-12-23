@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/THE BLAQUE BARBER/CLionProjects/BUS RESERVATIONS
+# Install script for directory: C:/Users/THE BLAQUE BARBER/Documents/GitHub/bus-reservation-system
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/THE BLAQUE BARBER/CLionProjects/BUS RESERVATIONS/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/THE BLAQUE BARBER/Documents/GitHub/bus-reservation-system/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

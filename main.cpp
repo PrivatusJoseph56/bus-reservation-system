@@ -40,7 +40,7 @@ struct Bus {
         }
         cout << "\n";
     }
-
+//today
     bool bookSeats(const vector<int>& seatsToBook) {
         for (int seat : seatsToBook) {
             auto it = find(availableSeats.begin(), availableSeats.end(), seat);
