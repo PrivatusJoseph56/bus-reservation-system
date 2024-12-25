@@ -1,0 +1,8 @@
+This program implements a **Bus Reservation System** with the following key functions:
+
+1. Create a Seat: Adds a specific seat to the list of available seats if it doesn't already exist.
+2. Delete a Seat: Removes a specific seat from the list of available seats if it exists.
+3. View Available Seats: Displays all the seats that are currently available.
+4. Interactive Menu: Allows users to interact with the system through a simple menu-driven interface.
+
+The program ensures seat numbers are within valid ranges and keeps the list of available seats sorted for clarity.
