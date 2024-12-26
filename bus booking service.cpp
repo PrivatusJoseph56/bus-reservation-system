@@ -9,7 +9,7 @@ private: // private access modifier
     vector<int> seats;
     const int totalSeats;
 
-public:
+public: // public access modifier
     BusReservationSystem(int totalSeats) : totalSeats(totalSeats) {
         // Initialize all seats as available
         for (int i = 1; i <= totalSeats; ++i) {
