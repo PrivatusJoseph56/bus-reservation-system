@@ -16,7 +16,7 @@ public: // public access modifier
             seats.push_back(i);
         }
     }
-
+// function to create a seat reservation
     void createSeat(int seatNumber) {
         if (find(seats.begin(), seats.end(), seatNumber) != seats.end()) {
             cout << "Seat " << seatNumber << " is already available.\n";
