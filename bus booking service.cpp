@@ -5,7 +5,7 @@
 using namespace std;
 
 class BusReservationSystem {
-private:
+private: // private access modifier
     vector<int> seats;
     const int totalSeats;
 
