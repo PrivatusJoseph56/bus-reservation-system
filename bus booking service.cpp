@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vector>
+#include <vector> // header file for dynamic storage of arrays
 #include <algorithm>
 
 using namespace std;
