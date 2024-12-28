@@ -7,7 +7,7 @@
 
 using namespace std;
 
-// Struct representing a Bus
+// Structure representing a Bus
 struct Bus {
     string busName;
     string from;
