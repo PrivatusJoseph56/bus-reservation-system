@@ -2,7 +2,7 @@
 #include <vector> // header file for dynamic storage of arrays
 #include <algorithm>
 
-using namespace std;
+using namespace std; // to avoid re use of prefix srd::
 
 class BusReservationSystem {
 private: // private access modifier
