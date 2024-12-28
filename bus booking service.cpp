@@ -24,10 +24,19 @@ public:
             cout << "Seat " << seatNumber << " has been successfully booked!" << endl;
         }
     }
-    
+
      void viewAllSeats() {
         cout << "Bus seats status: " << endl;
         for (int i = 0; i < totalSeats; i++) {
             cout << "Seat " << i + 1 << ": " << (seats[i] ? "Booked" : "Available") << endl;
         }
+    }
+      void viewRemainingSeats() {
+        int remainingSeats = 0;
+        for (int i = 0; i < totalSeats; i++) {
+            if (!seats[i]) {
+                remainingSeats++;
+            }
+        }
+        cout << "Remaining available seats: " << remainingSeats << endl;
     }
