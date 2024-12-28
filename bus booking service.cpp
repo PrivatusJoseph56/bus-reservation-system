@@ -40,3 +40,14 @@ public:
         }
         cout << "Remaining available seats: " << remainingSeats << endl;
     }
+     void deleteBooking(int seatNumber) {
+        if (seatNumber < 1 || seatNumber > totalSeats) {
+            cout << "Invalid seat number! Please try again." << endl;
+        } else if (!seats[seatNumber - 1]) {
+            cout << "Seat " << seatNumber << " is not booked!" << endl;
+        } else {
+            seats[seatNumber - 1] = false;
+            cout << "Booking for seat " << seatNumber << " has been canceled!" << endl;
+        }
+    }
+};
