@@ -51,3 +51,12 @@ public:
         }
     }
 };
+
+int main() {
+    int totalSeats;
+    cout << "Enter total number of seats in the bus: ";
+    cin >> totalSeats;
+
+    BusReservationSystem bus(totalSeats);
+
+    int choice, seatNumber;
