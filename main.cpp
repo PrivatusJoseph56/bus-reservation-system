@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <vector>
+#include <vector>  // for dynamic srray storage
 #include <fstream>
 #include <iomanip>
 #include <algorithm>
