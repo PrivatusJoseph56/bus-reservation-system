@@ -1,7 +1,7 @@
-#include <iostream>
+#include <iostream> // standard cpp librart
 #include <string>
-#include <vector>  // for dynamic srray storage
-#include <fstream>
+#include <vector>  // for dynamic array storage
+#include <fstream> // for creating, writing and reading from a file
 #include <iomanip>
 #include <algorithm>
 
