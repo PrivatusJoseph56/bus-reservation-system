@@ -1,13 +1,13 @@
-#include <iostream>
-#include <vector>
-using namespace std;
+#include <iostream> // the main cpp librays
+#include <vector> // dynamic storage of arrays
+using namespace std;  // to avoid the re-use of the prefix std::
 
 class BusReservationSystem {
-private:
+private: // access modifier 
     vector<bool> seats;  // vector to store seat booking status (true = booked, false = available)
     int totalSeats;
 
-public:
+public: // access modifier
     BusReservationSystem(int numSeats) {
         totalSeats = numSeats;
         seats.resize(totalSeats, false); // Initially, all seats are available (false)
