@@ -87,3 +87,9 @@ int main() {
                 cin >> seatNumber;
                 bus.deleteBooking(seatNumber);
                 break;
+                 case 5:
+                cout << "Exiting the system." << endl;
+                return 0;
+            default:
+                cout << "Invalid choice! Please try again." << endl;
+        }
