@@ -82,3 +82,8 @@ int main() {
             case 3:
                 bus.viewRemainingSeats();
                 break;
+                 case 4:
+                cout << "Enter seat number to cancel booking: ";
+                cin >> seatNumber;
+                bus.deleteBooking(seatNumber);
+                break;
