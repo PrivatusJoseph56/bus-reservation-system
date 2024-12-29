@@ -80,18 +80,18 @@ int main() {
                 bus.viewAllSeats();  // call the function to view all the seat
                 break;
             case 3:
-                bus.viewRemainingSeats();
+                bus.viewRemainingSeats(); // call the function to view the remaing seats
                 break;
                  case 4:
                 cout << "Enter seat number to cancel booking: ";
                 cin >> seatNumber;
-                bus.deleteBooking(seatNumber);
+                bus.deleteBooking(seatNumber);  // call the function to delete a booked seat
                 break;
                  case 5:
-                cout << "Exiting the system." << endl;
+                cout << "Exiting the system." << endl;   // to exit the program
                 return 0;
             default:
-                cout << "Invalid choice! Please try again." << endl;
+                cout << "Invalid choice! Please try again." << endl;   // for invalid response
         }
   }
 
