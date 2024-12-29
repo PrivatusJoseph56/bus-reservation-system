@@ -70,3 +70,9 @@ int main() {
         cout << "5. Exit" << endl;
         cout << "Enter your choice: ";
         cin >> choice;
+        switch (choice) {
+            case 1:
+                cout << "Enter seat number to book: ";
+                cin >> seatNumber;
+                bus.bookSeat(seatNumber);
+                break;
