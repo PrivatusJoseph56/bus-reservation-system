@@ -76,3 +76,9 @@ int main() {
                 cin >> seatNumber;
                 bus.bookSeat(seatNumber);
                 break;
+                           case 2:
+                bus.viewAllSeats();
+                break;
+            case 3:
+                bus.viewRemainingSeats();
+                break;
