@@ -77,7 +77,7 @@ int main() {
                 bus.bookSeat(seatNumber);
                 break;
                            case 2:
-                bus.viewAllSeats();
+                bus.viewAllSeats();  // call the function to view all the seat
                 break;
             case 3:
                 bus.viewRemainingSeats();
