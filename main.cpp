@@ -1,7 +1,7 @@
-#include <iostream> // standard cpp librart
-#include <string>  // to deal with strings
-#include <vector>  // for dynamic array storage
-#include <fstream> // for creating, writing and reading from a file
+#include <iostream> 
+#include <string>  
+#include <vector>  
+#include <fstream> 
 #include <iomanip>
 #include <algorithm>
 
@@ -31,7 +31,7 @@ struct Bus {
              << ", Fare: $" << fixed << setprecision(2) << fare
              << ", Available Seats: " << getAvailableSeatsCount() << "\n";
     }
-//
+
     void displayAvailableSeats() const {
         cout << "Available Seats: ";
         for (int seat : availableSeats) {
@@ -39,7 +39,7 @@ struct Bus {
         }
         cout << "\n";
     }
-//today
+
     bool bookSeats(const vector<int>& seatsToBook) {
         for (int seat : seatsToBook) {
             auto it = find(availableSeats.begin(), availableSeats.end(), seat);
@@ -146,9 +146,6 @@ int main() {
     return 0;
 }
 
-
-
-
 void managerMenu(vector<Bus> &buses) {
     int choice;
     do {
@@ -227,7 +224,7 @@ void addBus(vector<Bus> &buses) {
     buses.emplace_back(name, from, to, fare, seats);
     cout << "Bus added successfully!\n";
 }
-//function to edit bus details
+
 void editBus(vector<Bus> &buses) {
     string name;
     cout << "Enter the name of the bus to edit: ";
@@ -256,7 +253,7 @@ void editBus(vector<Bus> &buses) {
     }
     cout << "Bus not found!\n";
 }
-//function to display Buses availability
+
 void displayBuses(const vector<Bus> &buses) {
     if (buses.empty()) {
         cout << "No buses available.\n";
@@ -268,7 +265,7 @@ void displayBuses(const vector<Bus> &buses) {
         bus.displayBus();
     }
 }
-//calling bookSeat function
+
 void bookSeat(vector<Bus> &buses) {
     string name;
     int count;
@@ -320,7 +317,7 @@ void bookSeat(vector<Bus> &buses) {
     }
     cout << "Bus not found!\n";
 }
-//calling the cancelBooking function
+
 void cancelBooking(vector<Bus> &buses) {
     string name;
     int count;
@@ -347,7 +344,6 @@ void cancelBooking(vector<Bus> &buses) {
     cout << "Bus not found!\n";
 }
 
-
 void saveBusesToFile(const vector<Bus> &buses) {
     string fileName = "buses.txt";
     ofstream outFile(fileName);
@@ -364,7 +360,7 @@ void saveBusesToFile(const vector<Bus> &buses) {
 }
 
 void loadBusesFromFile(vector<Bus> &buses) {
-    string fileName = "buses.txt"; // Assuming the file name is buses.txt
+    string fileName = "buses.txt"; 
     ifstream inFile(fileName);
     if (!inFile) {
         return;
@@ -377,7 +373,6 @@ void loadBusesFromFile(vector<Bus> &buses) {
         Bus bus(name, from, to, fare, totalSeats);
         int seat;
         while (inFile >> seat) {
-            // End of seat list
             if (seat == -1) break;
             bus.cancelSeats({seat});
         }
