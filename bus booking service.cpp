@@ -1,5 +1,6 @@
 #include <iostream> // the main cpp librays
 #include <vector> // dynamic storage of arrays
+#include <string> // libray for string operations
 using namespace std;  // to avoid the re-use of the prefix std::
 
 class BusReservationSystem {
