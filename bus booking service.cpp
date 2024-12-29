@@ -31,6 +31,7 @@ public:
             cout << "Seat " << i + 1 << ": " << (seats[i] ? "Booked" : "Available") << endl;
         }
     }
+    // function to view the remaing seats.
       void viewRemainingSeats() {
         int remainingSeats = 0;
         for (int i = 0; i < totalSeats; i++) {
@@ -40,6 +41,7 @@ public:
         }
         cout << "Remaining available seats: " << remainingSeats << endl;
     }
+    // function to delete a booking
      void deleteBooking(int seatNumber) {
         if (seatNumber < 1 || seatNumber > totalSeats) {
             cout << "Invalid seat number! Please try again." << endl;
@@ -54,6 +56,7 @@ public:
 
 int main() {
     int totalSeats;
+    // ask the bus operator to input the total number of seats of the bus
     cout << "Enter total number of seats in the bus: ";
     cin >> totalSeats;
 
@@ -62,6 +65,7 @@ int main() {
     int choice, seatNumber;
 
     while (true) {
+        // to display the system option menu
         cout << "\n*** Bus Reservation System ***" << endl;
         cout << "1. Book a seat" << endl;
         cout << "2. View all bus seats" << endl;
