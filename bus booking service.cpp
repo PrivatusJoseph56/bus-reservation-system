@@ -24,7 +24,7 @@ public:
             cout << "Seat " << seatNumber << " has been successfully booked!" << endl;
         }
     }
-
+// function to view all the seats
      void viewAllSeats() {
         cout << "Bus seats status: " << endl;
         for (int i = 0; i < totalSeats; i++) {
@@ -60,3 +60,13 @@ int main() {
     BusReservationSystem bus(totalSeats);
 
     int choice, seatNumber;
+
+    while (true) {
+        cout << "\n*** Bus Reservation System ***" << endl;
+        cout << "1. Book a seat" << endl;
+        cout << "2. View all bus seats" << endl;
+        cout << "3. View remaining available seats" << endl;
+        cout << "4. Delete a seat booking" << endl;
+        cout << "5. Exit" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
