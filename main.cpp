@@ -31,7 +31,7 @@ struct Bus {
              << ", Fare: $" << fixed << setprecision(2) << fare
              << ", Available Seats: " << getAvailableSeatsCount() << "\n";
     }
-
+    // function to show the available seats
     void displayAvailableSeats() const {
         cout << "Available Seats: ";
         for (int seat : availableSeats) {
