@@ -22,6 +22,7 @@ struct Bus {
             availableSeats.push_back(i);
         }
     }
+
     string getBusName() const { return busName; }
     int getAvailableSeatsCount() const { return availableSeats.size(); }
     double getFare() const { return fare; }
@@ -31,6 +32,7 @@ struct Bus {
              << ", Fare: $" << fixed << setprecision(2) << fare
              << ", Available Seats: " << getAvailableSeatsCount() << "\n";
     }
+    
     // function to show the available seats
     void displayAvailableSeats() const {
         cout << "Available Seats: ";
