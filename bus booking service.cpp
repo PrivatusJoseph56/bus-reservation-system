@@ -4,6 +4,7 @@
 using namespace std;  // to avoid the re-use of the prefix std::
 
 class BusReservationSystem {
+    
 private: // access modifier 
     vector<bool> seats;  // vector to store seat booking status (true = booked, false = available)
     int totalSeats;
@@ -25,7 +26,7 @@ public: // access modifier
             cout << "Seat " << seatNumber << " has been successfully booked!" << endl;
         }
     }
-    
+
 // function to view all the seats
      void viewAllSeats() {
         cout << "Bus seats status: " << endl;
@@ -44,6 +45,7 @@ public: // access modifier
         }
         cout << "Remaining available seats: " << remainingSeats << endl;
     }
+
     // function to delete a booking
      void deleteBooking(int seatNumber) {
         if (seatNumber < 1 || seatNumber > totalSeats) {
