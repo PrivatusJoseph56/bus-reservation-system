@@ -25,6 +25,7 @@ public: // access modifier
             cout << "Seat " << seatNumber << " has been successfully booked!" << endl;
         }
     }
+    
 // function to view all the seats
      void viewAllSeats() {
         cout << "Bus seats status: " << endl;
@@ -32,6 +33,7 @@ public: // access modifier
             cout << "Seat " << i + 1 << ": " << (seats[i] ? "Booked" : "Available") << endl;
         }
     }
+
     // function to view the remaing seats.
       void viewRemainingSeats() {
         int remainingSeats = 0;
